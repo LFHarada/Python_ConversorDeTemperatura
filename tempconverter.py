@@ -3,9 +3,9 @@
 while True:
 
     print("")
-    print("-"*25)
+    print("-" * 25)
     print("CONVERSOR DE TEMPERATURAS")
-    print("-"*25)
+    print("-" * 25)
     print("\nQual conversão deseja fazer?\n")
 
     print("1 - Kelvin")
@@ -28,10 +28,10 @@ while True:
 
             elif option2 == 2:  # to Fahrenheit
                 kelvin = float(input('Temperatura em K: '))
-                temp = (((kelvin - 273.15)*1.8) + 32)
+                temp = (((kelvin - 273.15) * 1.8) + 32)
                 print("\n{:.2f} K equivalem a {:.2f} °F".format(kelvin, temp))
 
-            elif option2 == 3: # to Celsius
+            elif option2 == 3:  # to Celsius
                 kelvin = float(input('Temperatura em K: '))
                 temp = kelvin - 273.15
                 print("\n{:.2f} K equivalem a {:.2f} °C".format(kelvin, temp))
@@ -39,7 +39,7 @@ while True:
             else:
                 print("Error")
 
-        elif option1 == 2: # Fahrenheit
+        elif option1 == 2:  # Fahrenheit
 
             option2 = int(input("Medida de temperatura de destino: "))
 
@@ -52,7 +52,7 @@ while True:
                 fahrenheit = float(input('Temperatura em °F: '))
                 print("\n{:.2f} °F equivalem a {:.2f} °F".format(fahrenheit, fahrenheit))
 
-            elif option2 == 3: # to Celsius
+            elif option2 == 3:  # to Celsius
                 fahrenheit = float(input('Temperatura em °F: '))
                 temp = (fahrenheit - 32) / 1.8
                 print("\n{:.2f} °F equivalem a {:.2f} °C".format(fahrenheit, temp))
@@ -74,7 +74,7 @@ while True:
                 temp = celsius * 1.8 + 32
                 print("\n{:.2f} °C equivalem a {:.2f} °F".format(celsius, temp))
 
-            elif option2 == 3: # to Celsius
+            elif option2 == 3:  # to Celsius
                 celsius = float(input('Temperatura em °C: '))
                 print("\n{:.2f} °C equivalem a {:.2f} °C".format(celsius, celsius))
 
